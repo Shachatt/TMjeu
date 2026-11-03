@@ -2,7 +2,7 @@
 import { ref, computed } from 'vue';
 
 const chiffre = ref<number>(0)
-const array = [1,2,3,4,5,6]
+const array = [4,87,9,2,56,0]
 
 function augmenter(){
     return chiffre.value += 1
@@ -21,12 +21,12 @@ const atteintDix = computed(() => {
 
 const uneListe:number[] = []
 function pour(){
-    for (let index = 0; index < array.length; index++) {
-        uneListe.push(index)
+    for (let i = 0; i = array.length; i++) {
+        uneListe.push(i)
     }
     return uneListe
 }
-console.log(pour)
+console.log(uneListe)
 </script>
 
 <template>
